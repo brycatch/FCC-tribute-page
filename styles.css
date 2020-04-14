@@ -1,0 +1,143 @@
+/* General */
+
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* End General */
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 64px;
+}
+
+header .metallica-logo {
+    height: 45px;
+}
+
+header .nav ul {
+    padding: 0;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+header .nav .fw-icon {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+header .nav a {
+    color: initial;
+    text-decoration: none;
+}
+
+/* End Header */
+
+main {
+    max-width: 1200px;
+    padding: 16px 64px;
+    margin: 0 auto;
+}
+
+main .section-image {
+    text-align: center;
+}
+
+main .section-image h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+main #img-div {
+    display: block;
+}
+
+main #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+main #img-caption {
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+main .section-info h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+main .section-info .info {
+    display: flex;
+}
+
+main .section-info .info .info-title {
+    margin-right: 16px;
+    margin-bottom: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 64px;
+}
+
+footer a {
+    color: initial;
+}
+
+footer h2 {
+    font-size: 16px;
+}
+
+/* Media queries*/
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 1000px;
+    }
+    main .section-image h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px 16px;
+    }
+    header .nav ul {
+        width: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .section-image h1 {
+        font-size: 16px;
+    }
+    main .section-info .info {
+        flex-direction: column;
+    }
+    main .section-info .info .info-message {
+        margin-bottom: 4px;
+    }
+}
+
+/* End Media queries*/
